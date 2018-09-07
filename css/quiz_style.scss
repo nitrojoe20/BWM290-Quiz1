@@ -12,9 +12,9 @@ $basefont: sans-serif;
 $leftmargin: 50px;
 $padding: 10px;
 
-@mixin rounded{
-    border: 2px solid #064277;
-    border-radius: 20px;
+@mixin rounded($borderwidth: 2px, $bordercolor: #064277, $radius: 20px){
+    border: $borderwidth solid $bordercolor;
+    border-radius: $radius;
 }
 
 header {
@@ -74,8 +74,7 @@ p{
 }
 
 .samplepara {
-    border: 3px solid #58a0e0;
-    border-radius: 5px;
+    @include rounded(3px, #58a0e0, $radius: 5px);
     padding: $padding;
     background-color: white;
 }
