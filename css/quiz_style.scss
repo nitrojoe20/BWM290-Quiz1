@@ -12,9 +12,14 @@ $basefont: sans-serif;
 $leftmargin: 50px;
 $padding: 10px;
 
-header {
+@mixin rounded{
     border: 2px solid #064277;
-    border-radius: 20px;    margin: 10px auto;
+    border-radius: 20px;
+}
+
+header {
+    @include rounded;
+    margin: 10px auto;
     padding: $padding;
     background-color: $background;
     text-align: center;
@@ -37,16 +42,14 @@ h1 {
 }
 
 #content {
-    border: 2px solid #064277;
-    border-radius: 20px;    
+    @include rounded;
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
 }
 
 #list{
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include rounded;
     background-color: $background;
 }
 
@@ -78,8 +81,7 @@ p{
 }
 
 footer {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include rounded;
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
