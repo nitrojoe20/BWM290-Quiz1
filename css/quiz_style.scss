@@ -1,0 +1,98 @@
+//Joe Lusk
+//BWM290
+//Quiz 1
+//9-7-2018
+
+
+/* Quiz styles */
+
+
+$background: aliceblue;
+$basefont: sans-serif;
+$leftmargin: 50px;
+$padding: 10px;
+
+header {
+    border: 2px solid #064277;
+    border-radius: 20px;    margin: 10px auto;
+    padding: $padding;
+    background-color: $background;
+    text-align: center;
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    font:{
+        family:$basefont;
+        size: 1em;
+        style:oblique;
+    }
+    background-color: #dadadb
+}
+
+
+h1 {
+    color:#58a0e0;
+}
+
+#content {
+    border: 2px solid #064277;
+    border-radius: 20px;    
+    margin: 10px auto;
+    padding: $padding;
+    background-color: $background;
+}
+
+#list{
+    border: 2px solid #064277;
+    border-radius: 20px;
+    background-color: $background;
+}
+
+h2 {
+    color: #064277;
+}
+
+h3 {
+    margin-left: $leftmargin;
+    color:#58a0e0
+}
+
+ul{
+    margin-left: $leftmargin;
+}
+
+p{
+    font:{
+        family: serif;
+        style: normal;
+    }
+}
+
+.samplepara {
+    border: 3px solid #58a0e0;
+    border-radius: 5px;
+    padding: $padding;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid #064277;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: $padding;
+    background-color: $background;
+}
+
+#footer {
+    font:{ 
+        size: .75em;
+        style:italic;
+        weight: bold;
+    }
+    color: #064277;
+    text-align: center;
+}
+
+
